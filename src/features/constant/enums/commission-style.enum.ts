@@ -1,0 +1,4 @@
+export enum COMMISSION_STYLE {
+    PERCENTAGE = 'PERCENTAGE',
+    FIXED_RATE = 'FIXED_RATE',
+}

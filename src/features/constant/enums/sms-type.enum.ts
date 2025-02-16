@@ -1,0 +1,5 @@
+export enum SMS_TYPE {
+    MASKING = 'MASKING',
+    NON_MASKING = 'NON_MASKING',
+    FIXED_NUMBER = 'FIXED_NUMBER',
+}

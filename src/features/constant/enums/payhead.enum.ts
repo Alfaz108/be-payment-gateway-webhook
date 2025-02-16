@@ -1,0 +1,4 @@
+export enum PAY_HEAD_TYPE {
+    ADDITION = 'ADDITION',
+    DEDUCTION = 'DEDUCTION',
+}

@@ -1,0 +1,67 @@
+export enum CLIENT_STATUS {
+    ACTIVE = 'ACTIVE',
+    INACTIVE = 'INACTIVE',
+    EXPIRED = 'EXPIRED',
+}
+
+export enum RESELLER_SUBRESELLER_PAYMENTGATEWAY {
+    RESELLER_OWN = 'RESELLER_OWN',
+    MERCHANT = 'MERCHANT',
+    SUB_RESELLER_OWN = 'SUB_RESELLER_OWN',
+    RESELLER = 'RESELLER',
+}
+
+export enum PACKAGE_STATUS {
+    ACTIVE = 'ACTIVE',
+    INACTIVE = 'INACTIVE',
+    DELETE = 'DELETED',
+}
+
+export enum APPROVED_STATUS {
+    APPROVED = 'APPROVED',
+    PENDING = 'PENDING',
+    REJECTED = 'REJECTED',
+}
+
+export enum USER_STATUS {
+    NEW = 'NEW',
+    ACTIVE = 'ACTIVE',
+    INACTIVE = 'INACTIVE',
+    BANNED = 'BANNED',
+    DELETE = 'DELETE',
+}
+
+export enum DISTRIBUTOR_STATUS {
+    ACTIVE = 'ACTIVE',
+    INACTIVE = 'INACTIVE',
+    BANNED = 'BANNED',
+    DELETE = 'DELETE',
+}
+
+export enum MERCHANT_TYPE {
+    LIVE = 'LIVE',
+    NEW = 'NEW',
+    TRIAL = 'TRIAL',
+    DEMO = 'DEMO',
+}
+
+export enum SALARY_TYPE_STATUS {
+    MONTHLY = 'MONTHLY',
+    DAILY = 'DAILY',
+    WEEKLY = 'WEEKLY',
+    YEARLY = 'YEARLY',
+}
+
+export enum NOTE_STATUS {
+    PENDING = 'PENDING',
+    PROCESSING = 'PROCESSING',
+    COMPLETED = 'COMPLETED',
+}
+
+export enum BRANCH_STATUS {
+    NEW = 'NEW',
+    ACTIVE = 'ACTIVE',
+    INACTIVE = 'INACTIVE',
+    EXPIRED = 'EXPIRED',
+    BANNED = 'BANNED',
+}

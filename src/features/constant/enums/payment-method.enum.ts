@@ -1,0 +1,13 @@
+export enum PAYMENT_METHODS_ENUM {
+    CASH = 'CASH',
+    CARD = 'CARD',
+    CHEQUE = 'CHEQUE',
+    BKASH = 'BKASH',
+    ROCKET = 'ROCKET',
+    NAGAD = 'NAGAD',
+    SURECASH = 'SURECASH',
+    UCASH = 'UCASH',
+    MOBILE_BANKING = 'MOBILE_BANKING',
+    SSL_COMMERCE = 'SSL_COMMERCE',
+    OTHERS = 'OTHERS',
+}

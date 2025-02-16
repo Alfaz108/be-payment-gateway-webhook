@@ -1,0 +1,5 @@
+export enum PACKAGE_CHANGE {
+    PENDING = 'PENDING',
+    REJECTED = 'REJECTED',
+    APPROVE = 'APPROVE',
+}
