@@ -23,6 +23,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     const user = await this.userService.getUserById(
       new Types.ObjectId(payload._id)
     );
+
     if (!user) throw new UnauthorizedException();
 
     //@ Compare token's issued-at time (iat) with user's updated-at time

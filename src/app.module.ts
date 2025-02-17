@@ -12,6 +12,8 @@ import { MerchantModule } from "./features/merchant/merchant.module";
 import { ActivityLogModule } from "./features/activity-log/activity-log.module";
 import { ValidateObjectIdPipe } from "./features/common/validation-helper/validate-objectid.pipe";
 import { ScheduleModule } from "@nestjs/schedule";
+import { PaymentAppModule } from "./features/payment-app/payment-app.module";
+import { PaymentModule } from "./features/payment/payment.module";
 
 @Module({
   imports: [
@@ -58,10 +60,10 @@ import { ScheduleModule } from "@nestjs/schedule";
     CommonModule,
     UserModule,
     AuthModule,
-
     MerchantModule,
-
     ActivityLogModule,
+    PaymentAppModule,
+    PaymentModule,
   ],
 
   controllers: [],

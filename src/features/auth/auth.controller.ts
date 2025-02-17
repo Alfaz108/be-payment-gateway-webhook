@@ -4,21 +4,15 @@ import {
   Body,
   HttpCode,
   HttpStatus,
-  UseInterceptors,
   Get,
-  Param,
-  UploadedFiles,
-  Query,
 } from "@nestjs/common";
 import { AuthService } from "./auth.service";
 import { LoginDto } from "./dto/login.dto";
-import { AuthUser, IAuthUser, Public } from "../common";
+import { Public } from "../common";
 import { RegistrationDto } from "./dto/registration.dto";
 
-import { FileFieldsInterceptor } from "@nestjs/platform-express";
 import { MerchantService } from "../merchant/merchant.service";
 import { Merchant } from "../merchant/schema/merchant.schema";
-import { Types } from "mongoose";
 import { UserLginInfo } from "../common/decorator/get-auth-user.decorator";
 import { IUserLoginInfo } from "../common/interfaces/auth-user.interface";
 
@@ -34,6 +28,7 @@ export class AuthController {
   async registration(
     @Body() registrationDto: RegistrationDto
   ): Promise<{ data: Merchant; message: string }> {
+    console.log({ registrationDto });
     const data = await this.merchantService.create(registrationDto);
     return { data, message: "Registration Successful" };
   }

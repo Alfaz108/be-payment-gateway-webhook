@@ -1,10 +1,8 @@
-import { IsMongoId, IsNotEmpty, IsString } from "class-validator";
-import { Types } from "mongoose";
-import { IsValidMobile } from "src/features/common/decorator/is-phone-number.decorator";
+import { IsNotEmpty, IsString } from "class-validator";
 
 export class LoginDto {
   @IsNotEmpty()
-  @IsValidMobile()
+  @IsString()
   mobile: string;
 
   @IsNotEmpty()

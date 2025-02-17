@@ -13,15 +13,11 @@ import {
   ValidateNested,
 } from "class-validator";
 import { Types } from "mongoose";
-import { IsValidMobile } from "src/features/common/decorator/is-phone-number.decorator";
-import {
-  Avatar,
-  PersonDto,
-} from "src/features/common/validation/create-person.dto";
-import { PAYMENT_STATUS, USER_STATUS } from "src/features/constant";
-import { APPROVED_STATUS } from "src/features/constant/enums/status.enum";
+import { CommonDto } from "src/features/common";
+import { Avatar } from "src/features/common/validation/create-person.dto";
+import { USER_STATUS } from "src/features/constant";
 
-export class CreateMerchantDto extends PersonDto {
+export class CreateMerchantDto extends CommonDto {
   @IsNotEmpty({ message: "Company name is required" })
   @IsString({ message: "Company name must be a string" })
   companyName: string;
@@ -36,7 +32,7 @@ export class CreateMerchantDto extends PersonDto {
   password: string;
 
   @IsNotEmpty()
-  @IsValidMobile()
+  @IsString()
   mobile: string;
 
   @IsOptional()
